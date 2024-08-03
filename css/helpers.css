@@ -1,0 +1,38 @@
+/* CSS Debugger */
+/** {
+	 outline: 1px solid red; 
+}*/
+
+img:not([alt]) {
+	border: 10px solid red !important;
+}
+
+/* Set cursor pointer */
+label[for],
+button,
+input[type="submit"],
+select {
+  cursor: pointer;
+}
+
+/* Remove font style on address */
+address {
+  font-style: normal;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* Print external URLs */
+@media print {
+  a[href]:not([href^='#'])::after {
+    content: '('attr(href)')';
+  }
+}

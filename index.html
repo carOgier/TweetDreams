@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Caroline Ogier" />
+    <meta name="description" content="Un touiteur alternatif pour des personnes en manque de sommeil " />
+    <title>Tweet Dreams</title>
+</head>
+
+
+<body>
+
+    <header class="header" role="banner">
+        <div class="container">
+            
+            <div class="title">
+                <div class="moon"></div>
+                <h1>Tweet Dreams</h1>
+            </div>
+            <h2>Le réseau des personnes en manque de sommeil</h2>
+    
+        </div>
+    </header>
+
+
+    <main class="main">                
+        <div class="wrapper">
+            <section class="form" role="form">
+                <div class="container">
+                    <form id="tweet-form" class="form-content">
+                            <div class="pseudo-form">
+                                <label for="name" class="pseudo-label">Pseudo</label>
+                                <input type="text" id="name" class="pseudo-input" name="pseudo" minlength="3"  maxlength="16" placeholder="Morpheus" autocomplete="given-name" required/>
+                            </div>
+                            
+                            <div class="msg-form">
+                                <label for="msg" class="msg-label">Message</label>
+                                <textarea id="msg" class="msg-textarea" minlength="3" maxlength="256" 
+                                rows="8" cols="30" name="msg" placeholder="Blah Bla Bl b" autocomplete="family-name" required></textarea> 
+                            </div>
+
+                            <input type="submit" value="valider" class="button-submit" id="form-submit"/>                    
+                    </form>
+                </div>
+            </section>
+            
+            
+
+            <section class="tendances">
+                <div class="container">
+                   
+                    <div class="influencers">
+                        <button class="accordeon">
+                            <h2>They forgot to uncomment</h2>
+                            <h3>// Sleep(  )</h3>
+                            </button>
+                        <div class="influencers-content" id="influencers-content">
+                            
+                            <!--<div class="influencer">
+                                <p>Pseudo</p>
+                            </div>-->
+                            
+                        </div>
+                    </div>
+                
+
+                    <div class="top-words">
+                        <button class="accordeon">
+                            <h2>Sweet Dreams are made of this</h2>
+                        </button>
+                        <div class="top-word-content" id="top-word-content">
+
+                        <!--<span></span>-->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+
+        <dialog id="dialog-reussi" role="dialog" aria-modal="true">
+            <p>Félicitation pour le touit !</p>
+            <button autofocus>Fermer</button>
+        </dialog>
+
+        <dialog id="dialog-echoue" role="dialog" aria-modal="true">
+            <p>Désolé ça n'a pas fonctionné ! Tweet Dreams aussi veux dormir</p>
+            <button autofocus>Fermer</button>
+        </dialog>
+
+
+        <section class="result" role="feed">
+            <div class="container">
+                <div class="result-content" id="result-content" >
+
+                    <!--<div class="tweet">
+                        <div class="person"><p>Pseudo</p>
+                        <img src="benoist.png" alt="" class="avatar"></div>
+                         
+                        <div class="content">
+                            <p class="date">date</p>   
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, tempore error illo nisi laborum earum asperiores recusandae ad animi quidem harum quia provident officia est</p>
+                        </div>
+
+                        <div class="interactions">
+                            <button class="smallMoon"> Moon </button>
+                            <span class="likes"> like nb </span>
+                            <button class="comments"> Comment </button>
+                            <span class="commentsNb"> comments nb </span>
+                        </div>
+                    </div>-->
+
+                </div>
+
+                <button class="loadMore" type="button" id="loadMore">Dormir c'est nul je veux scroller</button>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+        &copy; Caro &ndash; 2024
+        </div>
+    </footer>
+
+
+    <script src="./tweetdreams.js"></script>
+</body>
+</html>
+
